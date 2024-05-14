@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url('https://storage.googleapis.com/web-profile-me/Untitled%20design.gif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 0.5;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px);
+    margin: 20px 0;
+}
+
+.profile-content {
+    background: #BCA37F;
+    text-align: center;
+    padding: 30px 70px;
+    color: #161A30;
+    border-radius: 20px;
+    position: relative;
+}
+
+.menu-ic, .setting-ic {
+    width: 23px;
+    position: absolute;
+    top: 20px;
+}
+
+.menu-ic {
+    left: 20px;
+}
+
+.setting-ic {
+    right: 20px;
+}
+
+.profile-picture {
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    background: #161A30;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.sosmed img {
+    width: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.add-bottom {
+    background: #161A30;
+    color: antiquewhite;
+    padding: 40px 0;
+    margin-right: -70px;
+    margin-left: -70px;
+    margin-bottom: -30px;
+    border-radius: 20px 20px;
+    margin-top: -10px;
+}
+
+.add-bottom img {
+    width: 25px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.connect-button {
+    display: inline-block;
+    background: antiquewhite;
+    color: #161A30;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: -20px;
+    cursor: pointer;
+    border-radius: 33px;
+    font-weight: 650;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.connect-button:hover {
+    background: #e0e0e0;
+}
+
+.profile-content h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: 600;
+}
